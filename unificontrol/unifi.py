@@ -636,7 +636,12 @@ class UnifiClient(metaclass=MetaNameFixer):
         "List dashboard metrics",
         "stat/dashboard",
         )
-
+    
+    list_dashboard_5mins = UnifiAPICall(
+        "List dashboard metrics",
+        "stat/dashboard?scale=5minutes",
+        )
+    
     list_users = UnifiAPICall(
         "List knows clients groups",
         "list/user",
